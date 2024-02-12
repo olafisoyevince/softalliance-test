@@ -1,0 +1,11 @@
+$footer__bg: #2d416f;
+
+.footer__wrapper {
+    height: 58px;
+    background-color: $footer__bg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 43px;
+    color: #ffffff;
+}

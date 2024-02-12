@@ -1,0 +1,26 @@
+$green: #4baa79;
+
+.search__container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    .searchfield {
+        border: 1px solid #dfdfdf;
+        padding: 15px;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+        width: 100%;
+    }
+
+    .search__icon__wrapper {
+        padding: 20px;
+        background-color: $green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        cursor: pointer;
+    }
+}

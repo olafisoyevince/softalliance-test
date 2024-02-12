@@ -1,0 +1,16 @@
+.layout {
+    display: flex;
+    height: auto;
+
+    .right {
+        width: 83%;
+
+        .body {
+            height: 100%;
+            // width: 100%;
+            padding-left: 50px;
+            padding-right: 95px;
+            background-color: #fafafa;
+        }
+    }
+}

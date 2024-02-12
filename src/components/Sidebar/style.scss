@@ -1,0 +1,114 @@
+$dark-blue: #2d416f;
+$grey: #818da9;
+$grey-2: #96a0b7;
+$light-green: #f3fff1;
+$green: #4baa79;
+
+.sidebar__wrapper {
+    width: 17%;
+    padding: 0 16px;
+    // border: 1px solid black;
+    height: 110vh;
+    background-color: white;
+
+    .logo {
+        padding: 30px 0;
+    }
+
+    .switch__module {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+
+        .switch__container {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .switch__button {
+                background: $dark-blue;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 4px;
+            }
+
+            .switch__module__text {
+                font-weight: 500;
+                font-size: 14px;
+            }
+
+            .payroll__text {
+                font-weight: 700;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .sidebar__links {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .link {
+            color: $grey;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            font-weight: 500;
+            padding: 10px 15px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $green;
+                color: white;
+                border-radius: 6px;
+            }
+
+            .image {
+                height: auto;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .justify {
+            justify-content: space-between;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .horizontal {
+            height: 1px;
+            background: $grey-2;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .sub__elements {
+            padding: 10px 0;
+            cursor: pointer;
+
+            :first-child {
+                padding: 10px 15px;
+                background: $light-green;
+                border-radius: 6px;
+
+                :hover {
+                }
+            }
+
+            :last-child {
+                padding: 10px 15px;
+            }
+        }
+    }
+}

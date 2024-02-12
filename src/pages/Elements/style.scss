@@ -1,0 +1,134 @@
+$green: #4baa79;
+$grey__line: #cdcdcd;
+
+.breadcrumb {
+    padding: 10px 0;
+}
+
+.elements__container {
+    width: 100%;
+    height: 600px;
+    background: white;
+    border-radius: 6px;
+    padding: 24px;
+
+    .create__container {
+        background: #f4f6f8;
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left__element {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .search {
+                width: 283.2px;
+                height: 40px;
+            }
+
+            .filter__icon {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .create__button {
+            border: none;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            background-color: $green;
+            color: white;
+            font-size: 16px;
+            gap: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+
+    .no__data {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .noelements__text {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            .caution__sign {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.element__form {
+    .stepper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .green__line {
+            height: 3px;
+            width: 100px;
+            background-color: $green;
+        }
+
+        .grey__line {
+            height: 3px;
+            width: 100px;
+            background-color: $grey__line;
+        }
+
+        .stepper__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .num__desc__container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // height: 80px;
+
+            .num {
+                border-radius: 50%;
+                transition: all;
+                transition-duration: 500ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                border: 3px solid $grey__line;
+                height: 30px;
+                width: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 12px 0;
+            }
+
+            .desc {
+                position: absolute;
+                top: 0;
+                text-align: center;
+                margin-bottom: 30px;
+                width: 100px;
+            }
+        }
+
+        .line {
+            flex: 1 1 auto;
+            border-top: 3px solid $grey__line;
+            transition: all;
+            transition-duration: 500ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+}
